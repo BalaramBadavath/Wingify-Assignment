@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Demo Form</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+  <div class="container gradient-container">
+    <div class="left-content">
+      <h1>Lorem ipsum dolor sit amet,<br> consectetur</h1>
+      <ul>
+        <li>
+          <span class="circle">⚪</span>
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <li style="margin-left: 50px;">You can use an Emoji for the circular bullet icon.</li>
+        </li>
+        <li>
+          <span class="circle">⚪</span>
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <li style="margin-left: 50px;">Lorem ipsum dolor sit amet consectetur adipiscing elit dolor.</li>
+        </li>
+        <li>
+          <span class="circle">⚪</span>
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <li style="margin-left: 50px;">Lorem ipsum dolor sit amet consectetur adipiscing elit dolor.</li>
+        </li>
+        <li>
+          <span class="circle">⚪</span>
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <li style="margin-left: 50px;">Lorem ipsum dolor sit amet consectetur adipiscing elit dolor.</li>
+        </li>
+      </ul>
+    </div>
+    <div class="right-content">
+      <h2 style="font-weight: 800;">Lorem ipsum dolor</h2>
+      <form onsubmit="return validateForm();" class="demo-form">
+        <div class="right-content-sub">
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+          <small id="email-error" class="error">Please add valid email address</small>  
+        </div>
+        
+        <div class="right-content-sub">
+          <label for="demo-date">Preferred Demo Date*</label>
+          <div class="date-select">
+            <input type="number" id="day" name="day"  placeholder="Date" min="1" max="31">
+            <select id="month" name="month" >
+              <option>Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            <select name="year" id="year">
+              <option id="year_opt">Year</option>
+              <option>2024</option>
+              <option>2025</option>
+            </select>
+          </div>
+          <small id="date-error" class="error">Please enter valid date</small>
+        </div>
+
+        <div class="right-content-sub">
+          <label for="department">Your Department*</label>
+          <select id="department" name="department" >
+            <option value="">Choose from the list</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Computer">Computer</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Mechanical">Mechanical</option>
+          </select>
+          <small id="department-error" class="error">Please select a field</small>
+        </div>
+
+        <div class="right-content-sub">
+          <label for="product-demo">Which product would you like to take demo for?</label>
+          <textarea  cols="20" rows="3" id="product-demo" name="product-demo" style="font-family: sans-serif; font-weight:200;" placeholder="Tell us more about your requirements..."></textarea>
+        </div>
+        <div class="radio-container">
+          <label>How did you hear about the us?</label>
+          <div class="radio-group">
+            <input type="radio" id="social-media" name="source" value="Social Media" checked>
+            <label for="social-media" class="radio-label">Social Media</label>
+      
+            <input type="radio" id="google-ads" name="source" value="Google Ads">
+            <label for="google-ads" class="radio-label">Google Ads</label>
+          </div>
+        </div>
+
+        <button type="submit" >Request a Demo</button>
+      </form>
+    </div>
+  </div>
+  
+  <div class="container-1">
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <div class="card-container">
+      <div class="card">
+        <img src="/assets/Bitmap.png" alt="Card Image 1">
+        <div class="overlay">
+          <h3>Default state</h3>
+      <p>This is default statue of the card, use an image as <code>&lt;img&gt;</code> tag and add gradient overlay and text over it.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="/assets/Bitmap.png" alt="Card Image 1">
+        <div class="overlay">
+          <h3>Hover State</h3>
+          <p>This is the hover state of the first card; both
+            cards should appear like this when the user
+            hovers over them.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+</body>
+</html>
